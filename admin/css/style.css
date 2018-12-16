@@ -1,0 +1,65 @@
+.ol_menu {
+  margin: 0;
+  color: #C61819;
+}
+
+.ol_menu li {
+  list-style: none;
+  padding-top: 6px;
+  
+}
+
+.ol_menu ol {
+  margin-left: 10px;
+  padding: 2px;
+  position: relative;
+}
+
+.ol_menu .menu_label {
+  position: relative;
+}
+
+.ol_menu .menu_label::before {
+  position: absolute;
+  top: 8px;
+  left: -20px;
+  background-color: #F2F2F2;
+  border: 1px solid #C61819;
+  ;
+  background-size: 10px 10px;
+  width: 10px;
+  height: 10px;
+  content: "";
+  border-radius: 1px;
+}
+
+li .menu_label+input[type=checkbox] {
+  opacity: 0;
+}
+
+li .menu_label {
+  cursor: pointer;
+}
+
+li .menu_label+input[type=checkbox]+ol>li {
+  display: none;
+}
+
+li .menu_label+input[type=checkbox]:checked+ol>li {
+  display: block;
+}
+
+li .menu_label+input[type=checkbox]:checked .menu_label::before {
+  position: absolute;
+  /*top: 8px;*/
+  /*left: -20px;*/
+  background-color: #C61819;
+  border: 1px solid #C61819;
+  background-size: 10px 10px;
+  width: 10px;
+  height: 10px;
+  content: "";
+  border-radius: 1px;
+}
+
+/*lista menu------------------------------------------------------------------*/
