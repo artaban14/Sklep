@@ -30,7 +30,7 @@ $mail->IsHTML(true);
 $mail->SetLanguage("pl", "vendor/phpmailer/phpmailer/language/");
 $mail->Username = "mail";
 $mail->Password = "pass";
-$mail->SetFrom('pass', "Sickride");
+$mail->SetFrom('mail', "Sickride");
 $mail->Subject = 'Pytanie od: '.$name;
 $mail->Body = $html;
 // $mail->AddEmbeddedImage('img/logo.png', 'logo');
